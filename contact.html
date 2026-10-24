@@ -46,8 +46,8 @@
 </head>
 <body class="bg-brand-dark text-gray-200 antialiased overflow-x-hidden">
 
-  <!-- Fixed Header Navigation -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/80 backdrop-blur-md border-b border-brand-border/60 transition-all duration-300">
+  <!-- Fixed Header Navigation with Hover Mega-Menu Ribbon -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-brand-border/60 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Brand Logo (Returns to Home) -->
@@ -65,10 +65,103 @@
         </div>
       </a>
 
-      <!-- Desktop Nav Links -->
+      <!-- Desktop Nav Links with Hover Mega-Menu -->
       <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
         <a href="/" class="hover:text-brand-400 transition-colors">Home</a>
-        <a href="/services.html" class="hover:text-brand-400 transition-colors">Services</a>
+
+        <!-- Services Hover Ribbon Dropdown -->
+        <div class="relative group py-6">
+          <a href="/services.html" class="hover:text-brand-400 transition-colors flex items-center space-x-1">
+            <span>Services</span>
+            <svg class="w-4 h-4 text-brand-400 group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </a>
+
+          <!-- Hover Mega Menu Grid -->
+          <div class="absolute left-1/2 -translate-x-1/2 top-full w-[850px] bg-brand-card/95 border border-brand-border rounded-2xl shadow-2xl p-6 hidden group-hover:grid grid-cols-2 gap-4 backdrop-blur-xl transition-all duration-300">
+            <a href="/services.html#paid-ads" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">🎯</span>
+              <div>
+                <p class="text-sm font-bold text-white">Paid Media & Performance Ads</p>
+                <p class="text-xs text-gray-400">Meta Ads, Google Search, Shopping & Programmatic</p>
+              </div>
+            </a>
+
+            <a href="/services.html#seo-aeo" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">🔍</span>
+              <div>
+                <p class="text-sm font-bold text-white">SEO & AI Search (AEO)</p>
+                <p class="text-xs text-gray-400">Technical SEO, Rank #1 & Perplexity/ChatGPT Optimization</p>
+              </div>
+            </a>
+
+            <a href="/services.html#social-media" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">📱</span>
+              <div>
+                <p class="text-sm font-bold text-white">Social Media Marketing</p>
+                <p class="text-xs text-gray-400">Community management, viral short-form & branding</p>
+              </div>
+            </a>
+
+            <a href="/services.html#web-dev" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">💻</span>
+              <div>
+                <p class="text-sm font-bold text-white">Website & App Development</p>
+                <p class="text-xs text-gray-400">Custom high-converting UI/UX, Web, & Mobile apps</p>
+              </div>
+            </a>
+
+            <a href="/services.html#branding" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">🎨</span>
+              <div>
+                <p class="text-sm font-bold text-white">Branding & Strategy</p>
+                <p class="text-xs text-gray-400">Brand identity, positioning & market communication</p>
+              </div>
+            </a>
+
+            <a href="/services.html#orm" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">🛡️</span>
+              <div>
+                <p class="text-sm font-bold text-white">Online Reputation Management (ORM)</p>
+                <p class="text-xs text-gray-400">Review growth, sentiment protection & crisis management</p>
+              </div>
+            </a>
+
+            <a href="/services.html#content" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">✍️</span>
+              <div>
+                <p class="text-sm font-bold text-white">Content Marketing & Copywriting</p>
+                <p class="text-xs text-gray-400">High-converting ad copy, landing pages & blogs</p>
+              </div>
+            </a>
+
+            <a href="/services.html#video-prod" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">🎬</span>
+              <div>
+                <p class="text-sm font-bold text-white">Video Production & Reels</p>
+                <p class="text-xs text-gray-400">Product ads, 2D/3D visual animations & high-converting shorts</p>
+              </div>
+            </a>
+
+            <a href="/services.html#crm-email" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">📧</span>
+              <div>
+                <p class="text-sm font-bold text-white">Email & CRM Automation</p>
+                <p class="text-xs text-gray-400">Lead nurturing flows, retargeting & LTV growth</p>
+              </div>
+            </a>
+
+            <a href="/services.html#media-buying" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">📊</span>
+              <div>
+                <p class="text-sm font-bold text-white">Media Planning & Buying</p>
+                <p class="text-xs text-gray-400">Data-driven channel allocation & ROI optimization</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <a href="/case-studies.html" class="hover:text-brand-400 transition-colors">Case Studies</a>
         <a href="/about.html" class="hover:text-brand-400 transition-colors">About Us</a>
         <a href="/contact.html" class="hover:text-brand-400 transition-colors text-brand-400 font-bold">Contact</a>
@@ -87,7 +180,7 @@
     <!-- Mobile Dropdown Navigation -->
     <div id="mobile-menu" class="hidden md:hidden bg-brand-dark/95 border-b border-brand-border/80 px-4 pt-2 pb-6 space-y-3">
       <a href="/" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-brand-400 hover:bg-brand-card">Home</a>
-      <a href="/services.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-brand-400 hover:bg-brand-card">Services</a>
+      <a href="/services.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-brand-400 hover:bg-brand-card">Services (10 Pillars)</a>
       <a href="/case-studies.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-brand-400 hover:bg-brand-card">Case Studies</a>
       <a href="/about.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-brand-400 hover:bg-brand-card">About Us</a>
       <a href="/contact.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-brand-400 bg-brand-card">Contact</a>
