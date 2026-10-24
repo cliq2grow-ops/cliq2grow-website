@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en" class="dark scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Marketing & Performance Services | CliQ2Grow</title>
+  <title>Our Digital Marketing Services | CliQ2Grow Digital Marketing Solutions</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -12,20 +11,23 @@
       theme: {
         extend: {
           colors: {
-            brand: {
+            brand: { 
               50: '#fffbeb',
               100: '#fef3c7',
-              400: '#fbbf24',
-              500: '#f59e0b',
+              400: '#fbbf24', 
+              500: '#f59e0b', 
               600: '#d97706',
               glow: '#ffb703',
-              dark: '#0a0a0c',
-              card: '#121218',
-              border: '#2a2a36'
+              dark: '#0a0a0c', 
+              card: '#121218', 
+              border: '#2a2a36' 
             }
           },
           fontFamily: { sans: ['Inter', 'sans-serif'] },
-          boxShadow: { 'glow-amber': '0 0 25px -5px rgba(245, 158, 11, 0.4)' }
+          boxShadow: { 
+            'glow-amber': '0 0 25px -5px rgba(245, 158, 11, 0.4)',
+            'glow-amber-lg': '0 0 40px -5px rgba(245, 158, 11, 0.6)' 
+          }
         }
       }
     }
@@ -35,16 +37,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     body { background-color: #0a0a0c; color: #e2e8f0; font-family: 'Inter', sans-serif; }
-    .text-gradient { background: linear-gradient(135deg, #ffffff 0%, #fbbf24 60%, #d97706 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .text-gradient {
+      background: linear-gradient(135deg, #ffffff 0%, #fbbf24 60%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   </style>
 </head>
-<body class="antialiased overflow-x-hidden bg-brand-dark">
+<body class="bg-brand-dark text-gray-200 antialiased overflow-x-hidden">
 
-  <!-- Fixed Header Navigation -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/80 backdrop-blur-md border-b border-brand-border/60 transition-all duration-300">
+  <!-- Fixed Header Navigation with Hover Mega Menu -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-brand-border/60 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <!-- Brand Logo (Returns to Home) -->
+      <!-- Brand Logo -->
       <a href="/" class="flex items-center space-x-3 group">
         <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-400 p-[1px] shadow-glow-amber">
           <div class="w-full h-full bg-brand-dark rounded-[11px] flex items-center justify-center">
@@ -59,331 +65,238 @@
         </div>
       </a>
 
-      <!-- Desktop Nav Links -->
+      <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
         <a href="/" class="hover:text-brand-400 transition-colors">Home</a>
-        <a href="/services.html" class="hover:text-brand-400 transition-colors text-brand-400 font-bold">Services</a>
-        <a href="/case-studies.html" class="hover:text-brand-400 transition-colors">Case Studies</a>
+        <a href="/services.html" class="hover:text-brand-400 transition-colors font-bold text-brand-400">Services</a>
         <a href="/about.html" class="hover:text-brand-400 transition-colors">About Us</a>
         <a href="/contact.html" class="hover:text-brand-400 transition-colors">Contact</a>
       </nav>
 
-      <!-- Mobile Menu Button (3 Lines) -->
+      <!-- Mobile Button -->
       <div class="md:hidden flex items-center">
-        <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none p-2">
+        <button id="mobile-menu-btn" class="text-gray-300 hover:text-white p-2">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
       </div>
     </div>
-
-    <!-- Mobile Dropdown Navigation -->
-    <div id="mobile-menu" class="hidden md:hidden bg-brand-dark/95 border-b border-brand-border/80 px-4 pt-2 pb-6 space-y-3">
-      <a href="/" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-brand-400 hover:bg-brand-card">Home</a>
-      <a href="/services.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-brand-400 bg-brand-card">Services</a>
-      <a href="/case-studies.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-brand-400 hover:bg-brand-card">Case Studies</a>
-      <a href="/about.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-brand-400 hover:bg-brand-card">About Us</a>
-      <a href="/contact.html" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-200 hover:text-brand-400 hover:bg-brand-card">Contact</a>
-    </div>
   </header>
 
-  <!-- CORE SERVICES SECTION -->
-  <section id="services" class="pt-32 pb-24 bg-brand-dark relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">
-          Core <span class="text-gradient">Service Solutions</span>
-        </h2>
-        <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-          Dual-engine growth frameworks combining paid performance scaling with dominating organic search visibility.
-        </p>
+  <!-- HERO SECTION -->
+  <section class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+    <span class="text-xs font-extrabold text-brand-400 uppercase tracking-widest bg-brand-card border border-brand-border px-4 py-2 rounded-full inline-block mb-4">
+      Full-Stack Digital Growth Ecosystem
+    </span>
+    <h1 class="text-4xl sm:text-6xl font-black text-white mb-6">
+      End-to-End Solutions Designed to <span class="text-gradient">Scale Your Brand</span>
+    </h1>
+    <p class="text-gray-400 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
+      From high-converting paid campaigns to custom web applications and full-funnel automation, we combine creative excellence with performance engineering to drive high-margin business growth.
+    </p>
+  </section>
+
+  <!-- SERVICES GRID SECTION -->
+  <section class="pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+      <!-- SERVICE 1: Paid Media -->
+      <div id="paid-ads" class="bg-brand-card border border-brand-border rounded-3xl overflow-hidden hover:border-brand-500/50 transition-all group">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Paid Media" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-8">
+          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">01. Performance Marketing</span>
+          <h3 class="text-2xl font-bold text-white mt-1 mb-3">Paid Media & ROI Campaigns</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Data-driven Meta (Facebook/Instagram), Google Search, YouTube, and LinkedIn ads engineered for maximum customer acquisition at the lowest possible CAC.
+          </p>
+          <a href="/contact.html" class="inline-flex items-center text-xs font-bold text-brand-400 uppercase tracking-widest hover:text-white transition-colors">
+            Book Performance Audit →
+          </a>
+        </div>
       </div>
 
-      <!-- Service Tabs Switcher -->
-      <div class="flex justify-center mb-12">
-        <div class="inline-flex p-1 rounded-2xl bg-brand-card border border-brand-border">
-          <button id="tab-btn-paid" onclick="switchTab('paid')" class="px-6 py-3 rounded-xl text-sm font-bold transition-all duration-300 bg-brand-500 text-black shadow-glow-amber">
-            Performance Marketing (Paid Ads)
-          </button>
-          <button id="tab-btn-seo" onclick="switchTab('seo')" class="px-6 py-3 rounded-xl text-sm font-bold text-gray-400 hover:text-white transition-all duration-300">
-            SEO & Search Dominance
-          </button>
+      <!-- SERVICE 2: SEO & AEO -->
+      <div id="seo-aeo" class="bg-brand-card border border-brand-border rounded-3xl overflow-hidden hover:border-brand-500/50 transition-all group">
+        <img src="https://images.unsplash.com/photo-1571786256017-aee7a0c009b6?auto=format&fit=crop&w=800&q=80" alt="SEO and AEO" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-8">
+          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">02. Search Engine Dominance</span>
+          <h3 class="text-2xl font-bold text-white mt-1 mb-3">SEO & AI Search Optimization (AEO)</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Rank #1 on Google Search and optimize your brand to be recommended as the top answer across AI engines like Perplexity, ChatGPT, and Gemini.
+          </p>
+          <a href="/contact.html" class="inline-flex items-center text-xs font-bold text-brand-400 uppercase tracking-widest hover:text-white transition-colors">
+            Get Organic Strategy →
+          </a>
         </div>
       </div>
 
-      <!-- Tab Content 1: Performance Marketing -->
-      <div id="tab-content-paid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        <!-- Meta Ads -->
-        <div class="bg-brand-card p-8 rounded-3xl border border-brand-border hover:border-brand-500/50 transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Meta Ads (Facebook & Instagram)</h3>
-          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-            High-converting visual ad creative systems, laser-targeted audience profiling, and automated retargeting funnels designed to deliver consistent leads.
+      <!-- SERVICE 3: Social Media -->
+      <div id="social-media" class="bg-brand-card border border-brand-border rounded-3xl overflow-hidden hover:border-brand-500/50 transition-all group">
+        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80" alt="Social Media" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-8">
+          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">03. Audience Engagement</span>
+          <h3 class="text-2xl font-bold text-white mt-1 mb-3">Social Media Management & Strategy</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Build active online communities through strategic organic social campaigns, trending content calendar management, and active audience interaction.
           </p>
-          <ul class="space-y-2 text-xs text-gray-300">
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Custom UGC & Motion Graphics Creatives</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Deep Lookalike & Interest Segmentation</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Dynamic Lead Form & Landing Page Funnels</li>
-          </ul>
+          <a href="/contact.html" class="inline-flex items-center text-xs font-bold text-brand-400 uppercase tracking-widest hover:text-white transition-colors">
+            Scale Social Presence →
+          </a>
         </div>
-
-        <!-- Google Ads -->
-        <div class="bg-brand-card p-8 rounded-3xl border border-brand-border hover:border-brand-500/50 transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.761H12.545z"/></svg>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Google Ads (Search, PPC & Shopping)</h3>
-          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-            Intercept buyers at the exact moment of high commercial intent. Complete optimization across Search, Performance Max, YouTube, and Display networks.
-          </p>
-          <ul class="space-y-2 text-xs text-gray-300">
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> High-Intent Commercial Keyword Bidding</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Negative Keyword Audit & Waste Elimination</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Quality Score & Ad Copy Optimization</li>
-          </ul>
-        </div>
-
-        <!-- Funnel & CRO -->
-        <div class="bg-brand-card p-8 rounded-3xl border border-brand-border hover:border-brand-500/50 transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Funnel Building & CRO</h3>
-          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-            High-converting dedicated landing pages crafted for ultra-fast load times, clear UX hierarchy, and maximum conversion rates.
-          </p>
-          <ul class="space-y-2 text-xs text-gray-300">
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Custom Mobile-Optimized Landing Pages</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Heatmap & User Behavior Analytics</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Continuous A/B Split Testing</li>
-          </ul>
-        </div>
-
-        <!-- Lead Nurturing -->
-        <div class="bg-brand-card p-8 rounded-3xl border border-brand-border hover:border-brand-500/50 transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Automated Lead Nurturing</h3>
-          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-            Never let a lead go cold. Instant automated WhatsApp, SMS, and email follow-up workflows integrated with your CRM within 60 seconds.
-          </p>
-          <ul class="space-y-2 text-xs text-gray-300">
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> WhatsApp Business API Automation</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> CRM Integration (HubSpot, Zoho, LeadSquared)</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Instant Call-Routing & Notification Trigger</li>
-          </ul>
-        </div>
-
       </div>
 
-      <!-- Tab Content 2: SEO Solutions (Hidden by Default) -->
-      <div id="tab-content-seo" class="hidden grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        <!-- Technical SEO -->
-        <div class="bg-brand-card p-8 rounded-3xl border border-brand-border hover:border-brand-500/50 transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Technical & On-Page SEO</h3>
-          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-            Fix underlying site architecture, core web vitals, speed issues, and schema markup so Google ranks your pages effortlessly.
+      <!-- SERVICE 4: Web & App Dev -->
+      <div id="web-dev" class="bg-brand-card border border-brand-border rounded-3xl overflow-hidden hover:border-brand-500/50 transition-all group">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Web Development" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-8">
+          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">04. Technology & Design</span>
+          <h3 class="text-2xl font-bold text-white mt-1 mb-3">Web Design & App Development</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Custom-built fast static websites, modern CMS integrations, dynamic web portals, and mobile apps designed to convert visitors into paying customers.
           </p>
-          <ul class="space-y-2 text-xs text-gray-300">
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Core Web Vitals Optimization</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Schema & Structured Data Implementation</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Internal Link & Architecture Re-Engineering</li>
-          </ul>
+          <a href="/contact.html" class="inline-flex items-center text-xs font-bold text-brand-400 uppercase tracking-widest hover:text-white transition-colors">
+            Build Modern Website →
+          </a>
         </div>
+      </div>
 
-        <!-- Local SEO -->
-        <div class="bg-brand-card p-8 rounded-3xl border border-brand-border hover:border-brand-500/50 transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Local SEO & GBP Map Pack Dominance</h3>
-          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-            Dominate top 3 Google Map pack rankings in your target city or territory to capture immediate local high-intent customers.
+      <!-- SERVICE 5: Branding & Strategy -->
+      <div id="branding" class="bg-brand-card border border-brand-border rounded-3xl overflow-hidden hover:border-brand-500/50 transition-all group">
+        <img src="https://images.unsplash.com/photo-1542744094-3a31b272c490?auto=format&fit=crop&w=800&q=80" alt="Branding" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-8">
+          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">05. Brand Positioning</span>
+          <h3 class="text-2xl font-bold text-white mt-1 mb-3">Brand Communication & Strategy</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Craft a memorable brand identity with professional visual guidelines, core value propositions, and positioning strategies that stand out from competitors.
           </p>
-          <ul class="space-y-2 text-xs text-gray-300">
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Google Business Profile (GBP) Optimization</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Local Citation & Geo-Targeted Signals</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Review Strategy & Reputation Engine</li>
-          </ul>
+          <a href="/contact.html" class="inline-flex items-center text-xs font-bold text-brand-400 uppercase tracking-widest hover:text-white transition-colors">
+            Craft Brand Strategy →
+          </a>
         </div>
+      </div>
 
-        <!-- Commercial Intent Keyword Strategy -->
-        <div class="bg-brand-card p-8 rounded-3xl border border-brand-border hover:border-brand-500/50 transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Commercial Intent Keyword Strategy</h3>
-          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-            We ignore vanity search traffic and target bottom-of-funnel commercial keywords that directly generate phone calls and sales orders.
+      <!-- SERVICE 6: ORM -->
+      <div id="orm" class="bg-brand-card border border-brand-border rounded-3xl overflow-hidden hover:border-brand-500/50 transition-all group">
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="ORM" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-8">
+          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">06. Brand Protection</span>
+          <h3 class="text-2xl font-bold text-white mt-1 mb-3">Online Reputation Management (ORM)</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Protect and boost your brand trust across digital channels. We manage public feedback, promote 5-star customer reviews, and suppress negative search results.
           </p>
-          <ul class="space-y-2 text-xs text-gray-300">
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Buyer Intent Keyword Mapping</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Competitor Search Gap Exploitation</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> High-Authority Topic Cluster Creation</li>
-          </ul>
+          <a href="/contact.html" class="inline-flex items-center text-xs font-bold text-brand-400 uppercase tracking-widest hover:text-white transition-colors">
+            Protect Brand Reputation →
+          </a>
         </div>
+      </div>
 
-        <!-- AEO & GEO -->
-        <div class="bg-brand-card p-8 rounded-3xl border border-brand-border hover:border-brand-500/50 transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Answer Engine Optimization (AEO/GEO)</h3>
-          <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-            Prepare your brand for the modern AI search era. Future-proof your site to appear inside Google Gemini, ChatGPT, and Perplexity search answers.
+      <!-- SERVICE 7: Content & Copywriting -->
+      <div id="content" class="bg-brand-card border border-brand-border rounded-3xl overflow-hidden hover:border-brand-500/50 transition-all group">
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" alt="Content Marketing" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-8">
+          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">07. Persuasive Content</span>
+          <h3 class="text-2xl font-bold text-white mt-1 mb-3">Content Marketing & Copywriting</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            High-converting direct response copy for sales pages, lead magnets, SEO articles, and ad scripts designed to captivate and convert target audiences.
           </p>
-          <ul class="space-y-2 text-xs text-gray-300">
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> AI Engine Information Architecture</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Entity & Knowledge Graph Establishment</li>
-            <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Conversational Query Answer Optimization</li>
-          </ul>
+          <a href="/contact.html" class="inline-flex items-center text-xs font-bold text-brand-400 uppercase tracking-widest hover:text-white transition-colors">
+            Order High-Converting Copy →
+          </a>
         </div>
+      </div>
 
+      <!-- SERVICE 8: Video Production -->
+      <div id="video-prod" class="bg-brand-card border border-brand-border rounded-3xl overflow-hidden hover:border-brand-500/50 transition-all group">
+        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80" alt="Video Production" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-8">
+          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">08. Creative Media</span>
+          <h3 class="text-2xl font-bold text-white mt-1 mb-3">Video Production & Reels Ads</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Short-form video editing for Instagram Reels, YouTube Shorts, product commercial shoots, and 2D/3D motion graphics designed to go viral.
+          </p>
+          <a href="/contact.html" class="inline-flex items-center text-xs font-bold text-brand-400 uppercase tracking-widest hover:text-white transition-colors">
+            Produce Video Ads →
+          </a>
+        </div>
+      </div>
+
+      <!-- SERVICE 9: CRM & Email -->
+      <div id="crm-email" class="bg-brand-card border border-brand-border rounded-3xl overflow-hidden hover:border-brand-500/50 transition-all group">
+        <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80" alt="Email Automation" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-8">
+          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">09. Customer Retention</span>
+          <h3 class="text-2xl font-bold text-white mt-1 mb-3">Email Marketing & CRM Automation</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Automated lead sequences, abandoned cart recovery, newsletter flows, and WhatsApp CRM messaging setups that multiply customer lifetime value (LTV).
+          </p>
+          <a href="/contact.html" class="inline-flex items-center text-xs font-bold text-brand-400 uppercase tracking-widest hover:text-white transition-colors">
+            Automate Email Flows →
+          </a>
+        </div>
+      </div>
+
+      <!-- SERVICE 10: Media Planning -->
+      <div id="media-buying" class="bg-brand-card border border-brand-border rounded-3xl overflow-hidden hover:border-brand-500/50 transition-all group">
+        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="Media Buying" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-8">
+          <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">10. Strategic Allocation</span>
+          <h3 class="text-2xl font-bold text-white mt-1 mb-3">Media Planning & Channel Buying</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">
+            Strategic ad budget allocation across digital publishers, influencer partnerships, and OTT media platforms to maximize overall reach and return.
+          </p>
+          <a href="/contact.html" class="inline-flex items-center text-xs font-bold text-brand-400 uppercase tracking-widest hover:text-white transition-colors">
+            Optimize Media Spend →
+          </a>
+        </div>
       </div>
 
     </div>
   </section>
 
-  <!-- Deep Dive Services List -->
-  <section class="pb-24 max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div class="bg-brand-card p-8 rounded-3xl border border-brand-border">
-      <h3 class="text-2xl font-bold text-white mb-3">1. Meta Ads Scaling</h3>
-      <p class="text-gray-400 text-sm mb-4">Facebook & Instagram ad campaigns designed around direct response copywriting, video creatives, and lookalike targeting.</p>
-    </div>
-
-    <div class="bg-brand-card p-8 rounded-3xl border border-brand-border">
-      <h3 class="text-2xl font-bold text-white mb-3">2. Google Search & Shopping PPC</h3>
-      <p class="text-gray-400 text-sm mb-4">Intercept high-intent buyers searching directly for your products and services with optimized Quality Scores.</p>
-    </div>
-
-    <div class="bg-brand-card p-8 rounded-3xl border border-brand-border">
-      <h3 class="text-2xl font-bold text-white mb-3">3. Search & AI Answer Engine Optimization (SEO/AEO)</h3>
-      <p class="text-gray-400 text-sm mb-4">Dominate local search map packs and rank inside AI search engines like ChatGPT, Gemini, and Google Search.</p>
-    </div>
-
-    <div class="bg-brand-card p-8 rounded-3xl border border-brand-border">
-      <h3 class="text-2xl font-bold text-white mb-3">4. Landing Page Conversion Optimization (CRO)</h3>
-      <p class="text-gray-400 text-sm mb-4">Custom ultra-fast landing pages built to turn traffic into direct form fills and strategy call bookings.</p>
+  <!-- CTA BOTTOM BANNER -->
+  <section class="pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="bg-gradient-to-r from-brand-card via-brand-dark to-brand-card border border-brand-border rounded-3xl p-10 text-center shadow-glow-amber-lg">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Ready to Accelerate Brand Growth?</h2>
+      <p class="text-gray-400 max-w-xl mx-auto text-sm sm:text-base mb-8">
+        Book a consultation with our strategy team to select the right combination of services for your growth goals.
+      </p>
+      <a href="/contact.html" class="px-8 py-4 rounded-xl bg-gradient-to-r from-brand-400 via-brand-500 to-brand-600 text-black font-extrabold text-sm shadow-glow-amber inline-block hover:scale-105 transition-transform">
+        Book Free Growth Audit
+      </a>
     </div>
   </section>
 
-  <!-- JAVASCRIPT LOGIC -->
-  <script>
-    // Mobile Menu Toggle Logic
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-
-    if (mobileMenuBtn && mobileMenu) {
-      mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-
-      mobileNavLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-        });
-      });
-    }
-
-    // Service Tabs Switcher
-    function switchTab(tab) {
-      const paidContent = document.getElementById('tab-content-paid');
-      const seoContent = document.getElementById('tab-content-seo');
-      const paidBtn = document.getElementById('tab-btn-paid');
-      const seoBtn = document.getElementById('tab-btn-seo');
-
-      if (tab === 'paid') {
-        paidContent.classList.remove('hidden');
-        seoContent.classList.add('hidden');
-        paidBtn.className = "px-6 py-3 rounded-xl text-sm font-bold transition-all duration-300 bg-brand-500 text-black shadow-glow-amber";
-        seoBtn.className = "px-6 py-3 rounded-xl text-sm font-bold text-gray-400 hover:text-white transition-all duration-300";
-      } else if (tab === 'seo') {
-        seoContent.classList.remove('hidden');
-        paidContent.classList.add('hidden');
-        seoBtn.className = "px-6 py-3 rounded-xl text-sm font-bold transition-all duration-300 bg-brand-500 text-black shadow-glow-amber";
-        paidBtn.className = "px-6 py-3 rounded-xl text-sm font-bold text-gray-400 hover:text-white transition-all duration-300";
-      }
-    }
-  </script>
-
-<!-- FOOTER -->
+  <!-- FOOTER -->
   <footer class="bg-brand-dark border-t border-brand-border/60 pt-16 pb-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-        
-        <!-- Brand Col -->
-        <div class="md:col-span-1">
-          <div class="flex items-center space-x-3 mb-4">
-            <div class="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center text-black font-black">C</div>
-            <span class="text-xl font-bold text-white">CliQ<span class="text-brand-400">2</span>Grow</span>
-          </div>
-          <p class="text-xs text-gray-400 mb-4 leading-relaxed">
-            Performance marketing agency and SEO engineering firm built to scale revenue predictably.
-          </p>
-          <p class="text-[11px] text-gray-500">
-            A division of <span class="text-gray-400 font-semibold">CliQ2Grow Digital Marketing Solutions</span>
-          </p>
-        </div>
-
-        <!-- Quick Links -->
-        <div>
-          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Solutions</h4>
-          <ul class="space-y-2 text-xs text-gray-400">
-            <li><a href="/services.html" class="hover:text-brand-400">Meta Ads Management</a></li>
-            <li><a href="/services.html" class="hover:text-brand-400">Google Search Ads</a></li>
-            <li><a href="/services.html" class="hover:text-brand-400">Local SEO & Map Pack</a></li>
-            <li><a href="/services.html" class="hover:text-brand-400">AEO & AI Search SEO</a></li>
-          </ul>
-        </div>
-
-        <!-- Framework -->
-        <div>
-          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Agency</h4>
-          <ul class="space-y-2 text-xs text-gray-400">
-            <li><a href="#framework" class="hover:text-brand-400">CliQ2Scale Framework</a></li>
-            <li><a href="#calculator" class="hover:text-brand-400">ROI Growth Audit</a></li>
-            <li><a href="#pricing" class="hover:text-brand-400">Retainer Packages</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact & Legal -->
-        <div>
-          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Connect</h4>
-          <p class="text-xs text-gray-400 mb-2">🌐 Domain: <span class="text-gray-200">cliQ2grow.com</span></p>
-          <p class="text-xs text-gray-400 mb-4">📩 Email: <span class="text-gray-200"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7e1d12172f4c190c11093e19131f1712501d1113">[email&#160;protected]</a></span></p>
-          <div class="flex space-x-3">
-            <a href="https://linkedin.com" class="w-8 h-8 rounded-lg bg-brand-card border border-brand-border flex items-center justify-center text-gray-400 hover:text-brand-400">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-            </a>
-            <a href="https://instagram.com" class="w-8 h-8 rounded-lg bg-brand-card border border-brand-border flex items-center justify-center text-gray-400 hover:text-brand-400">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
       <div class="border-t border-brand-border/40 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-        <p>© 2026 CliQ2Grow. All rights reserved.</p>
+        <p>© 2026 CliQ2Grow Digital Marketing Solutions. All rights reserved.</p>
         <div class="flex space-x-6 mt-4 md:mt-0">
-          <a href="#" class="hover:text-gray-400">Privacy Policy</a>
-          <a href="#" class="hover:text-gray-400">Terms of Service</a>
+          <a href="/privacy.html" class="hover:text-gray-400">Privacy Policy</a>
+          <a href="/terms.html" class="hover:text-gray-400">Terms of Service</a>
         </div>
       </div>
     </div>
   </footer>
 
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"a7af6962383f40a4bbe8e7bc4e5283a6","r":1,"spa":2}' crossorigin="anonymous"></script>
+  <!-- Script for Mobile Menu -->
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        if (menu.classList.contains('hidden')) {
+          menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+        } else {
+          menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+        }
+      });
+    }
+  </script>
+
 </body>
 </html>
