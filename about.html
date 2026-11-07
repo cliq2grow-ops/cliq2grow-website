@@ -137,6 +137,28 @@
           Get in Touch
         </a>
       </div>
+
+      <!-- Mobile Hamburger Button (Three Lines Menu) -->
+      <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="md:hidden text-white hover:text-brand-400 focus:outline-none p-2 rounded-lg" aria-label="Toggle Navigation Menu">
+        <svg id="hamburger-icon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg id="close-icon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-dark/98 border-b border-brand-border/80 px-6 pt-4 pb-6 space-y-4">
+      <a href="/" class="block text-gray-300 hover:text-brand-400 font-medium py-2 border-b border-brand-border/40">Home</a>
+      <a href="/services.html" class="block text-gray-300 hover:text-brand-400 font-medium py-2 border-b border-brand-border/40">Services</a>
+      <a href="/case-studies.html" class="block text-gray-300 hover:text-brand-400 font-medium py-2 border-b border-brand-border/40">Case Studies</a>
+      <a href="/about" class="block text-brand-400 font-bold py-2 border-b border-brand-border/40">About Us</a>
+      <a href="/contact.html" class="block text-gray-300 hover:text-brand-400 font-medium py-2 border-b border-brand-border/40">Contact</a>
+      <a href="/contact.html" class="block w-full text-center py-3 rounded-xl bg-gradient-to-r from-brand-400 to-brand-600 text-black font-bold text-sm shadow-glow-amber mt-4">
+        Get in Touch
+      </a>
     </div>
   </header>
 
@@ -322,7 +344,7 @@
             </p>
             <p class="flex items-center space-x-2">
               <span class="text-brand-400">📩</span>
-              <a href="mailto:cliq2grow@gmail.com" class="hover:text-brand-400">cliq2grow@gmail.com</a>
+              <a href="mailto:cliq2grow@gmail.com" class="hover:text-brand-400">cliq2grow.com</a>
             </p>
             <div class="flex items-start space-x-2 pt-1">
               <span class="text-brand-400">📍</span>
@@ -355,5 +377,23 @@
     </svg>
   </a>
 
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-icon');
+
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        hamburgerIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      }
+    }
+  </script>
 </body>
 </html>
