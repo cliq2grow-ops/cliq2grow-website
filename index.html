@@ -799,37 +799,61 @@
     }
 
     // Interactive ROI Calculator Logic
+    <script>
     function calculateROI() {
-      const budget = parseInt(document.getElementById('calc-budget').value);
+      const budget = parseInt(document.getElementById('calc-budget').value) || 0;
       const industry = document.getElementById('calc-industry').value;
       const goal = document.getElementById('calc-goal').value;
 
-      // Update Slider Display
       document.getElementById('budget-value').innerText = "₹" + budget.toLocaleString('en-IN');
 
-      // Multipliers based on industry CPL
-      let cpl = 500; // base Cost Per Lead
-      if (industry === 'realestate') cpl = 800;
-      if (industry === 'ecom') cpl = 350;
-      if (industry === 'saas') cpl = 1200;
-      if (industry === 'saas') cpl = 500;
+      let cpl = 500;
+      let minRoiMult = 4.5;
+      let maxRoiMult = 8.5;
+
+      switch (industry) {
+        case 'realestate':
+          cpl = 800; minRoiMult = 5.0; maxRoiMult = 10.0; break;
+        case 'ecom':
+          cpl = 350; minRoiMult = 3.5; maxRoiMult = 7.0; break;
+        case 'saas':
+          cpl = 1200; minRoiMult = 4.0; maxRoiMult = 8.0; break;
+        case 'finance':
+          cpl = 950; minRoiMult = 4.5; maxRoiMult = 9.0; break;
+        case 'healthcare':
+          cpl = 650; minRoiMult = 4.0; maxRoiMult = 7.5; break;
+        case 'education':
+          cpl = 450; minRoiMult = 5.0; maxRoiMult = 9.5; break;
+        case 'localservices':
+          cpl = 300; minRoiMult = 3.5; maxRoiMult = 6.5; break;
+        case 'legal':
+          cpl = 1500; minRoiMult = 4.0; maxRoiMult = 8.5; break;
+        default:
+          cpl = 500; minRoiMult = 4.5; maxRoiMult = 8.5;
+      }
+
+      if (goal === 'awareness') {
+        cpl = Math.round(cpl * 0.75);
+      } else if (goal === 'high_intent_leads') {
+        cpl = Math.round(cpl * 1.25);
+      }
 
       const minLeads = Math.round((budget / cpl) * 0.85);
       const maxLeads = Math.round((budget / cpl) * 1.35);
 
-      const minPipe = (budget * 4.5) / 100000;
-      const maxPipe = (budget * 8.5) / 100000;
+      const minPipe = (budget * minRoiMult) / 100000;
+      const maxPipe = (budget * maxRoiMult) / 100000;
 
       document.getElementById('res-leads').innerText = `${minLeads} - ${maxLeads}`;
       document.getElementById('res-pipeline').innerText = `₹${minPipe.toFixed(1)}L - ₹${maxPipe.toFixed(1)}L`;
-      document.getElementById('res-roi').innerText = `4.5x - 8.5x ROI`;
+      document.getElementById('res-roi').innerText = `${minRoiMult.toFixed(1)}x - ${maxRoiMult.toFixed(1)}x ROI`;
     }
 
-    // Initialize Calculator on load
+    // Initialize on page load
     calculateROI();
   </script>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"a7af6962383f40a4bbe8e7bc4e5283a6","r":1,"spa":2}' crossorigin="anonymous"></script>
-
+</body>
+</html>
   <!-- Floating WhatsApp Button (Middle-Right Side) -->
 <a href="https://wa.me/918660732070?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20digital%20marketing%20services." 
    target="_blank" 
