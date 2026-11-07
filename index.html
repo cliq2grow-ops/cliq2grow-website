@@ -387,6 +387,7 @@
                 <option value="ecom">E-Commerce & D2C Brands</option>
                 <option value="local">Local Services & Healthcare</option>
                 <option value="saas">B2B, SaaS & Tech Solutions</option>
+                <option value="saas">FinTech Solutions</option>
               </select>
             </div>
 
@@ -577,7 +578,7 @@
             <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Enterprise</span>
             <h3 class="text-2xl font-black text-white mt-2 mb-4">Market Dominance</h3>
             <div class="text-3xl font-extrabold text-gradient-gold mb-6">Custom <span class="text-xs font-normal text-gray-400">/ quote</span></div>
-            <p class="text-xs text-gray-400 mb-6">For aggressive regional brands, large real estate firms, and high-volume e-commerce.</p>
+            <p class="text-xs text-gray-400 mb-6">For aggressive regional brands, large real estate firms, Fintechs and high-volume e-commerce.</p>
             
             <ul class="space-y-3 text-xs text-gray-300 mb-8">
               <li class="flex items-center"><span class="text-brand-400 mr-2">✓</span> Unlimited Multi-Channel Ad Management</li>
@@ -811,6 +812,7 @@
       if (industry === 'realestate') cpl = 800;
       if (industry === 'ecom') cpl = 350;
       if (industry === 'saas') cpl = 1200;
+      if (industry === 'saas') cpl = 500;
 
       const minLeads = Math.round((budget / cpl) * 0.85);
       const maxLeads = Math.round((budget / cpl) * 1.35);
