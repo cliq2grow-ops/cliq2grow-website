@@ -126,7 +126,100 @@
 
       <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
         <a href="/" class="hover:text-brand-400 transition-colors">Home</a>
-        <a href="/services.html" class="hover:text-brand-400 transition-colors">Services</a>
+
+        <!-- Services Hover Ribbon Dropdown -->
+        <div class="relative group py-6">
+          <a href="/services.html" class="hover:text-brand-400 transition-colors flex items-center space-x-1">
+            <span>Services</span>
+            <svg class="w-4 h-4 text-brand-400 group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </a>
+
+          <!-- Hover Mega Menu Grid -->
+          <div class="absolute left-1/2 -translate-x-1/2 top-full w-[850px] bg-brand-card/95 border border-brand-border rounded-2xl shadow-2xl p-6 hidden group-hover:grid grid-cols-2 gap-4 backdrop-blur-xl transition-all duration-300">
+            <a href="/services/paid-media" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">🎯</span>
+              <div>
+                <p class="text-sm font-bold text-white">Paid Media & Performance Ads</p>
+                <p class="text-xs text-gray-400">Meta Ads, Google Search, Shopping & Programmatic</p>
+              </div>
+            </a>
+
+            <a href="/services/seo-aeo" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">🔍</span>
+              <div>
+                <p class="text-sm font-bold text-white">SEO & AI Search (AEO)</p>
+                <p class="text-xs text-gray-400">Technical SEO, Rank #1 & Perplexity/ChatGPT Optimization</p>
+              </div>
+            </a>
+
+            <a href="/services/social-media" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">📱</span>
+              <div>
+                <p class="text-sm font-bold text-white">Social Media Marketing</p>
+                <p class="text-xs text-gray-400">Community management, viral short-form & branding</p>
+              </div>
+            </a>
+
+            <a href="/services/web-dev" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">💻</span>
+              <div>
+                <p class="text-sm font-bold text-white">Website & App Development</p>
+                <p class="text-xs text-gray-400">Custom high-converting UI/UX, Web, & Mobile apps</p>
+              </div>
+            </a>
+
+            <a href="/services/branding" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">🎨</span>
+              <div>
+                <p class="text-sm font-bold text-white">Branding & Strategy</p>
+                <p class="text-xs text-gray-400">Brand identity, positioning & market communication</p>
+              </div>
+            </a>
+
+            <a href="/services/orm" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">🛡️</span>
+              <div>
+                <p class="text-sm font-bold text-white">Online Reputation Management (ORM)</p>
+                <p class="text-xs text-gray-400">Review growth, sentiment protection & crisis management</p>
+              </div>
+            </a>
+
+            <a href="/services/content" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">✍️</span>
+              <div>
+                <p class="text-sm font-bold text-white">Content Marketing & Copywriting</p>
+                <p class="text-xs text-gray-400">High-converting ad copy, landing pages & blogs</p>
+              </div>
+            </a>
+
+            <a href="/services/video-prod" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">🎬</span>
+              <div>
+                <p class="text-sm font-bold text-white">Video Production & Reels</p>
+                <p class="text-xs text-gray-400">Product ads, 2D/3D visual animations & high-converting shorts</p>
+              </div>
+            </a>
+
+            <a href="/services/crm-email" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">📧</span>
+              <div>
+                <p class="text-sm font-bold text-white">Email & CRM Automation</p>
+                <p class="text-xs text-gray-400">Lead nurturing flows, retargeting & LTV growth</p>
+              </div>
+            </a>
+
+            <a href="/services/media-buying" class="flex items-start space-x-3 p-3 rounded-xl hover:bg-brand-dark/60 transition-colors">
+              <span class="p-2.5 rounded-lg bg-amber-500/10 text-brand-400">📊</span>
+              <div>
+                <p class="text-sm font-bold text-white">Media Planning & Buying</p>
+                <p class="text-xs text-gray-400">Data-driven channel allocation & ROI optimization</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <a href="/case-studies.html" class="hover:text-brand-400 transition-colors">Case Studies</a>
         <a href="/about" class="hover:text-brand-400 transition-colors text-brand-400 font-bold">About Us</a>
         <a href="/contact.html" class="hover:text-brand-400 transition-colors">Contact</a>
@@ -344,7 +437,7 @@
             </p>
             <p class="flex items-center space-x-2">
               <span class="text-brand-400">📩</span>
-              <a href="mailto:cliq2grow@gmail.com" class="hover:text-brand-400">cliq2grow.com</a>
+              <a href="mailto:cliq2grow@gmail.com" class="hover:text-brand-400">cliq2grow@gmail.com</a>
             </p>
             <div class="flex items-start space-x-2 pt-1">
               <span class="text-brand-400">📍</span>
